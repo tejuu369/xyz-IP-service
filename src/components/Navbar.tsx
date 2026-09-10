@@ -5,7 +5,6 @@ import {
   ChevronDown,
   Menu,
   X,
-  Phone,
   ArrowRight,
   Shield,
   Search,
@@ -79,46 +78,6 @@ export const Navbar: React.FC = () => {
           : '-translate-y-full opacity-0 pointer-events-none'
       }`}
     >
-      {/* Top Utility Announcement Bar in svpconstructions theme */}
-      <div className="bg-charcoal-950 border-b border-white/5 text-xs text-charcoal-400 py-2 px-4 hidden sm:block">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <span className="flex items-center space-x-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
-              <span className="text-charcoal-200 font-medium">End-to-End Patent & IP Support</span>
-            </span>
-            <span className="text-charcoal-700">|</span>
-            <span className="text-charcoal-400">Bengaluru, Karnataka, India</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <a
-              href="tel:12345678790"
-              className="flex items-center space-x-1 text-gold-500 hover:text-gold-400 transition-colors"
-            >
-              <Phone className="w-3 h-3 text-gold-500" />
-              <span className="font-mono text-xs">12345678790</span>
-            </a>
-            <span className="text-charcoal-700">|</span>
-            <a
-              href="mailto:info@xyz.com"
-              className="text-charcoal-300 hover:text-gold-400 transition-colors font-mono text-xs"
-            >
-              info@xyz.com
-            </a>
-            <span className="text-charcoal-700">|</span>
-            <button
-              onClick={() => navigate('/admin')}
-              className={`flex items-center space-x-1 font-mono text-xs transition-colors ${
-                currentPath === '/admin' ? 'text-gold-400 font-bold' : 'text-charcoal-400 hover:text-gold-400'
-              }`}
-            >
-              <ShieldAlert className="w-3 h-3 text-gold-500" />
-              <span>Admin Portal</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
       {/* Main Sticky Navbar in svpconstructions theme */}
       <header
         className={`w-full transition-all duration-300 ${

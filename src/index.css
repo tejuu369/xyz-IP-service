@@ -20,9 +20,11 @@
   --color-charcoal-950: #0f0f10;
 
   --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --font-cursive: "Alex Brush", "Great Vibes", cursive;
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-cursive: "Pinyon Script", "Alex Brush", "Great Vibes", cursive;
   --font-cinzel: "Cinzel", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
