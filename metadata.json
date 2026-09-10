@@ -1,0 +1,8 @@
+{
+  "name": "xyz IP Services",
+  "description": "End-to-end patent and intellectual property support for innovators, startups, law firms, and foreign associates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
