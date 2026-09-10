@@ -153,6 +153,15 @@ export const Footer: React.FC = () => {
                   <span>Contact</span>
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => navigate('/admin')}
+                  className="text-gold-500 hover:text-gold-400 transition-colors flex items-center space-x-1.5 font-medium"
+                >
+                  <ChevronRight className="w-3.5 h-3.5 text-gold-500" />
+                  <span>Admin Portal</span>
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -287,6 +296,10 @@ export const Footer: React.FC = () => {
             <span className="text-charcoal-600">•</span>
             <button onClick={() => navigate('/contact')} className="hover:text-gold-400 transition-colors whitespace-nowrap">
               Bengaluru Office
+            </button>
+            <span className="text-charcoal-600">•</span>
+            <button onClick={() => navigate('/admin')} className="hover:text-gold-400 transition-colors whitespace-nowrap text-gold-500/80">
+              Admin Portal
             </button>
           </div>
         </div>

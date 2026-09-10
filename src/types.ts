@@ -58,3 +58,14 @@ export interface ConsultationFormData {
   serviceRequired: string;
   message: string;
 }
+
+export type EnquiryStatus = 'new' | 'contacted' | 'in-progress' | 'closed';
+
+export interface EnquiryRecord extends ConsultationFormData {
+  id: string;
+  createdAt: string;
+  status: EnquiryStatus;
+  notes?: string;
+  budget?: string;
+}
+

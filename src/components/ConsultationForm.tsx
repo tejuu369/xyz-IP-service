@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO } from '../data/companyData';
+import { saveEnquiry } from '../data/enquiriesStore';
 import {
   Send,
   CheckCircle2,
@@ -80,12 +81,16 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
     if (!validate()) return;
 
     setIsSubmitting(true);
-    // Simulate high-reliability API submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      if (onSuccess) onSuccess();
-    }, 900);
+    // Save to persistent Firebase Firestore database & local cache
+    saveEnquiry(formData)
+      .catch((err) => console.error('Failed to store inquiry in Firebase:', err))
+      .finally(() => {
+        setTimeout(() => {
+          setIsSubmitting(false);
+          setIsSubmitted(true);
+          if (onSuccess) onSuccess();
+        }, 500);
+      });
   };
 
   const handleDownloadSummary = () => {

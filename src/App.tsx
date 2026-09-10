@@ -11,6 +11,7 @@ import { AboutPage } from './pages/AboutPage';
 import { CareerPage } from './pages/CareerPage';
 import { ContactPage } from './pages/ContactPage';
 import { ServiceDetailPage } from './pages/ServiceDetailPage';
+import { AdminPortalPage } from './pages/AdminPortalPage';
 import { ALL_SERVICES_PAGES } from './data/companyData';
 
 const AppContent: React.FC = () => {
@@ -29,6 +30,8 @@ const AppContent: React.FC = () => {
     PageComponent = <CareerPage />;
   } else if (cleanPath === 'contact' || cleanPath === 'contact-us') {
     PageComponent = <ContactPage />;
+  } else if (cleanPath === 'admin' || cleanPath === 'admin-portal') {
+    PageComponent = <AdminPortalPage />;
   } else if (ALL_SERVICES_PAGES[cleanPath]) {
     PageComponent = <ServiceDetailPage slug={cleanPath} />;
   } else {

@@ -1,0 +1,21 @@
+{
+  "collections": {
+    "enquiries": {
+      "description": "Client consultation requests and patent enquiries",
+      "fields": {
+        "id": "string",
+        "createdAt": "string",
+        "status": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "phone": "string",
+        "company": "string",
+        "serviceRequired": "string",
+        "budget": "string",
+        "message": "string",
+        "notes": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Enquiries collection for client consultation and patent service requests
+    match /enquiries/{enquiryId} {
+      allow read, write: if true;
+    }
+  }
+}
