@@ -16,28 +16,28 @@ export const Footer: React.FC = () => {
   const { navigate, openConsultationModal } = useRouter();
 
   return (
-    <footer className="relative bg-slate-950 text-slate-300 border-t border-slate-800/80 overflow-hidden">
-      {/* Background blueprint grid subtle styling */}
-      <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:32px_32px] opacity-20 pointer-events-none" />
+    <footer className="relative bg-charcoal-950 text-charcoal-300 border-t border-white/10 overflow-hidden">
+      {/* Subtle architectural background texture */}
+      <div className="absolute inset-0 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:40px_40px] opacity-[0.03] pointer-events-none" />
 
-      {/* Top Pre-Footer Callout */}
-      <div className="relative border-b border-slate-800/80 bg-slate-900/40 py-12 px-4 sm:px-6 lg:px-8">
+      {/* Top Pre-Footer Callout in svpconstructions theme */}
+      <div className="relative border-b border-white/10 bg-charcoal-900/60 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="text-center lg:text-left">
-            <span className="font-mono text-xs text-blue-400 font-semibold tracking-wider uppercase block mb-1">
-              TECHNO-LEGAL PATENT SUPPORT
+            <span className="font-mono text-xs text-gold-500 font-semibold tracking-widest uppercase block mb-1">
+              TECHNO-LEGAL PATENT & IP EXCELLENCE
             </span>
-            <h3 className="text-2xl sm:text-3xl font-bold text-white font-heading">
+            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white tracking-tight">
               Ready to Protect and Commercialize Your Innovation?
             </h3>
-            <p className="text-sm text-slate-400 mt-2 max-w-2xl">
+            <p className="text-sm text-charcoal-400 mt-2 max-w-2xl font-sans">
               Discuss your patent drafting, search clearance, or portfolio intelligence requirements with our senior technical analysts.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <button
               onClick={() => openConsultationModal()}
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm shadow-xl shadow-blue-600/30 transition-all transform hover:-translate-y-0.5"
+              className="px-6 py-3 rounded-xl bg-gold-500 hover:bg-gold-600 text-charcoal-950 font-bold uppercase tracking-wider text-xs shadow-xl shadow-gold-500/20 transition-all transform hover:-translate-y-0.5"
             >
               Book a Consultation
             </button>
@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
               href={COMPANY_INFO.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-sm font-medium transition-colors"
+              className="px-5 py-3 rounded-xl bg-charcoal-900 hover:bg-charcoal-800 text-charcoal-200 border border-white/10 text-xs font-semibold uppercase tracking-wider transition-colors"
             >
               Chat on WhatsApp
             </a>
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
             <button onClick={() => navigate('/')} className="text-left">
               <Logo size="md" />
             </button>
-            <p className="text-sm text-slate-400 leading-relaxed pr-6">
+            <p className="text-sm text-charcoal-400 leading-relaxed pr-6 font-sans">
               xyz IP is an intellectual property support firm providing end-to-end patent and IP services for innovators, startups, law firms, foreign associates, universities, research institutions, and technology-driven businesses.
             </p>
             <div className="pt-2 flex items-center space-x-3">
@@ -69,87 +69,87 @@ export const Footer: React.FC = () => {
                 href={COMPANY_INFO.linkedIn}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl bg-slate-900 hover:bg-blue-900/50 border border-slate-800 hover:border-blue-600 text-slate-400 hover:text-blue-300 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-xl bg-charcoal-900 hover:bg-charcoal-800 border border-white/10 hover:border-gold-500/50 text-charcoal-400 hover:text-gold-400 flex items-center justify-center transition-colors"
                 aria-label="xyz IP LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
-              <span className="text-xs text-slate-500 font-mono">
+              <span className="text-xs text-charcoal-400 font-mono">
                 Connect on LinkedIn
               </span>
             </div>
-            <div className="pt-2 flex items-center space-x-2 text-xs text-slate-500 font-mono">
-              <ShieldCheck className="w-4 h-4 text-emerald-500" />
-              <span>STRICT NDA & CONFIDENTIALITY ASSURED</span>
+            <div className="pt-2 flex items-center space-x-2 text-xs text-charcoal-400 font-mono">
+              <ShieldCheck className="w-4 h-4 text-gold-500" />
+              <span className="tracking-wider">STRICT NDA & CONFIDENTIALITY ASSURED</span>
             </div>
           </div>
 
           {/* Col 2: Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-slate-200 border-b border-slate-800 pb-2">
+            <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-gold-400 border-b border-white/10 pb-2">
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
                 <button
                   onClick={() => navigate('/')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors flex items-center space-x-1.5"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors flex items-center space-x-1.5"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                  <ChevronRight className="w-3.5 h-3.5 text-charcoal-600" />
                   <span>Home</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/about-us')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors flex items-center space-x-1.5"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors flex items-center space-x-1.5"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                  <ChevronRight className="w-3.5 h-3.5 text-charcoal-600" />
                   <span>About Us</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/ip-services')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors flex items-center space-x-1.5"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors flex items-center space-x-1.5"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                  <ChevronRight className="w-3.5 h-3.5 text-charcoal-600" />
                   <span>IP Services</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/searches')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors flex items-center space-x-1.5"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors flex items-center space-x-1.5"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                  <ChevronRight className="w-3.5 h-3.5 text-charcoal-600" />
                   <span>Searches</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/business-intelligence')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors flex items-center space-x-1.5"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors flex items-center space-x-1.5"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                  <ChevronRight className="w-3.5 h-3.5 text-charcoal-600" />
                   <span>Business Intelligence</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/career')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors flex items-center space-x-1.5"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors flex items-center space-x-1.5"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                  <ChevronRight className="w-3.5 h-3.5 text-charcoal-600" />
                   <span>Career</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/contact')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors flex items-center space-x-1.5"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors flex items-center space-x-1.5"
                 >
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                  <ChevronRight className="w-3.5 h-3.5 text-charcoal-600" />
                   <span>Contact</span>
                 </button>
               </li>
@@ -158,14 +158,14 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: Services */}
           <div className="space-y-4">
-            <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-slate-200 border-b border-slate-800 pb-2">
+            <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-gold-400 border-b border-white/10 pb-2">
               Key Services
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <button
                   onClick={() => navigate('/patent-filing')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Patent Filing
                 </button>
@@ -173,7 +173,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/patent-drafting')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Patent Drafting
                 </button>
@@ -181,7 +181,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/patentability-prior-art-search')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Patentability Search
                 </button>
@@ -189,7 +189,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/freedom-to-operate')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Freedom to Operate (FTO)
                 </button>
@@ -197,7 +197,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/patent-invalidation')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Patent Invalidation
                 </button>
@@ -205,7 +205,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/patent-portfolio-analysis')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Patent Portfolio Analysis
                 </button>
@@ -213,7 +213,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/patent-licensing')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Patent Licensing
                 </button>
@@ -221,7 +221,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigate('/patent-monetization')}
-                  className="text-slate-400 hover:text-blue-400 transition-colors block text-left"
+                  className="text-charcoal-400 hover:text-gold-400 transition-colors block text-left"
                 >
                   Patent Monetization
                 </button>
@@ -231,30 +231,30 @@ export const Footer: React.FC = () => {
 
           {/* Col 4: Contact Information */}
           <div className="space-y-4">
-            <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-slate-200 border-b border-slate-800 pb-2">
+            <h4 className="text-xs font-mono font-bold uppercase tracking-widest text-gold-400 border-b border-white/10 pb-2">
               Corporate Office
             </h4>
-            <div className="space-y-3 text-xs text-slate-400">
+            <div className="space-y-3 text-xs text-charcoal-400">
               <div className="flex items-start space-x-2.5">
-                <MapPin className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-gold-500 flex-shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
                   Bengaluru, Karnataka, India – 560001
                 </span>
               </div>
               <div className="flex items-center space-x-2.5">
-                <Phone className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                <Phone className="w-4 h-4 text-gold-500 flex-shrink-0" />
                 <a
                   href={`tel:${COMPANY_INFO.phone}`}
-                  className="hover:text-blue-400 font-mono transition-colors"
+                  className="hover:text-gold-400 font-mono transition-colors"
                 >
                   {COMPANY_INFO.phone}
                 </a>
               </div>
               <div className="flex items-center space-x-2.5">
-                <Mail className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-gold-500 flex-shrink-0" />
                 <a
                   href={`mailto:${COMPANY_INFO.email}`}
-                  className="hover:text-blue-400 font-mono transition-colors"
+                  className="hover:text-gold-400 font-mono transition-colors"
                 >
                   {COMPANY_INFO.email}
                 </a>
@@ -266,7 +266,7 @@ export const Footer: React.FC = () => {
                 href={COMPANY_INFO.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300"
+                className="inline-flex items-center space-x-2 text-xs font-semibold text-gold-400 hover:text-gold-300"
               >
                 <span>Chat with Senior Associate</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -276,16 +276,16 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Copyright & Disclaimer */}
-        <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-xs text-charcoal-500 gap-4">
           <div>
             {COMPANY_INFO.copyright}
           </div>
-          <div className="flex items-center space-x-6">
-            <span>Intellectual Property & Patent Support Services</span>
-            <span>•</span>
-            <span>ISO Compliant Data Security</span>
-            <span>•</span>
-            <button onClick={() => navigate('/contact')} className="hover:text-slate-400">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-4 md:gap-x-6 gap-y-1">
+            <span className="whitespace-nowrap">Intellectual Property & Patent Support Services</span>
+            <span className="text-charcoal-600">•</span>
+            <span className="whitespace-nowrap">design and developed by Tejas H N</span>
+            <span className="text-charcoal-600">•</span>
+            <button onClick={() => navigate('/contact')} className="hover:text-gold-400 transition-colors whitespace-nowrap">
               Bengaluru Office
             </button>
           </div>

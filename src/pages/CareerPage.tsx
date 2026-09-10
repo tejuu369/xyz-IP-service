@@ -91,29 +91,29 @@ export const CareerPage: React.FC = () => {
   const [selectedRole, setSelectedRole] = useState<string | null>(null);
 
   return (
-    <div className="w-full bg-slate-950 text-slate-100">
+    <div className="w-full bg-charcoal-950 text-charcoal-100">
       <SeoMeta
-        title="Careers at Neropat IP Services | Join Our Technical Team"
-        description="Explore career opportunities for patent analysts, drafters, and technical specialists in computer science, mechanical, electronics, and biotech at Neropat IP Services."
+        title="Careers at xyz IP Services | Join Our Technical Team"
+        description="Explore career opportunities for patent analysts, drafters, and technical specialists in computer science, mechanical, electronics, and biotech at xyz IP Services."
         canonicalPath="/career"
         breadcrumbs={[{ label: 'Career', href: '/career' }]}
       />
 
       {/* Hero */}
-      <section className="relative pt-12 pb-16 bg-gradient-to-b from-slate-900/80 via-slate-950 to-slate-950 border-b border-slate-800/80">
+      <section className="relative pt-12 pb-16 bg-charcoal-900 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           <Breadcrumbs items={[{ label: 'Career' }]} />
 
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-950/70 border border-blue-800/50 text-blue-400 text-xs font-mono uppercase mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-mono uppercase mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-gold-500" />
             <span>JOIN OUR TECHNO-LEGAL CONSULTANCY</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-heading max-w-4xl leading-tight">
-            Careers at Neropat IP Services
+          <h1 className="text-3xl sm:text-5xl font-serif font-extrabold text-white tracking-tight max-w-4xl leading-tight">
+            Careers at xyz IP Services
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-300 max-w-3xl mt-4 leading-relaxed font-normal">
+          <p className="text-base sm:text-lg text-charcoal-300 max-w-3xl mt-4 leading-relaxed font-normal">
             Work at the intersection of cutting-edge technology and global patent law. We offer an intellectually stimulating environment for engineers, researchers, and patent specialists.
           </p>
         </div>
@@ -122,38 +122,38 @@ export const CareerPage: React.FC = () => {
       {/* Culture & Standards */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
-            <div className="w-10 h-10 rounded-xl bg-blue-950 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-4">
+          <div className="p-6 rounded-2xl bg-charcoal-900/70 border border-white/10">
+            <div className="w-10 h-10 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
               <Briefcase className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white mb-2 font-heading">
+            <h3 className="text-lg font-serif font-bold text-white mb-2">
               Intellectual Rigor
             </h3>
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <p className="text-xs sm:text-sm text-charcoal-400 leading-relaxed">
               Every day involves dissecting state-of-the-art inventions across artificial intelligence, wireless communication, robotics, and clean technology.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
-            <div className="w-10 h-10 rounded-xl bg-sky-950 border border-sky-800/60 flex items-center justify-center text-sky-400 mb-4">
+          <div className="p-6 rounded-2xl bg-charcoal-900/70 border border-white/10">
+            <div className="w-10 h-10 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
               <GraduationCap className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white mb-2 font-heading">
+            <h3 className="text-lg font-serif font-bold text-white mb-2">
               Structured Mentorship
             </h3>
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <p className="text-xs sm:text-sm text-charcoal-400 leading-relaxed">
               We train technical graduates to become elite patent analysts, mastering claim interpretation, database query syntax, and international examination doctrines.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
-            <div className="w-10 h-10 rounded-xl bg-indigo-950 border border-indigo-800/60 flex items-center justify-center text-indigo-400 mb-4">
+          <div className="p-6 rounded-2xl bg-charcoal-900/70 border border-white/10">
+            <div className="w-10 h-10 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
               <Shield className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white mb-2 font-heading">
+            <h3 className="text-lg font-serif font-bold text-white mb-2">
               High-Value Global Clients
             </h3>
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <p className="text-xs sm:text-sm text-charcoal-400 leading-relaxed">
               Direct involvement in patent drafting and invalidation searches supporting startups, tier-1 research institutions, and international associates.
             </p>
           </div>
@@ -161,11 +161,11 @@ export const CareerPage: React.FC = () => {
 
         {/* Current Openings Header */}
         <div className="mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white font-heading">
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white">
             Current Open Positions
           </h2>
-          <p className="text-sm text-slate-400 mt-1">
-            Review the role specifications below. To apply, email your curriculum vitae directly to <span className="text-blue-400 font-mono">info@neropat.com</span>.
+          <p className="text-sm text-charcoal-400 mt-1">
+            Review the role specifications below. To apply, email your curriculum vitae directly to <span className="text-gold-400 font-mono">{COMPANY_INFO.email}</span>.
           </p>
         </div>
 
@@ -177,23 +177,23 @@ export const CareerPage: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="p-6 sm:p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all"
+                className="p-6 sm:p-8 rounded-2xl bg-charcoal-900 border border-white/10 hover:border-gold-500/40 transition-all"
               >
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-white/10">
                   <div>
-                    <span className="font-mono text-xs text-blue-400 font-semibold block mb-1">
+                    <span className="font-mono text-xs text-gold-400 font-semibold block mb-1">
                       {role.domain}
                     </span>
-                    <h3 className="text-xl font-bold text-white font-heading">
+                    <h3 className="text-xl font-serif font-bold text-white">
                       {role.title}
                     </h3>
                   </div>
 
                   <div className="flex flex-wrap items-center gap-3 text-xs">
-                    <span className="px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 font-mono">
+                    <span className="px-3 py-1 rounded-lg bg-charcoal-950 border border-white/10 text-charcoal-300 font-mono">
                       {role.experience}
                     </span>
-                    <span className="px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 font-mono">
+                    <span className="px-3 py-1 rounded-lg bg-charcoal-950 border border-white/10 text-charcoal-300 font-mono">
                       {role.location}
                     </span>
                   </div>
@@ -201,13 +201,13 @@ export const CareerPage: React.FC = () => {
 
                 <div className="pt-4 grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
                   <div>
-                    <h4 className="font-mono text-xs uppercase font-bold text-slate-400 tracking-wider mb-2">
+                    <h4 className="font-mono text-xs uppercase font-bold text-charcoal-400 tracking-wider mb-2">
                       Key Responsibilities
                     </h4>
-                    <ul className="space-y-1.5 text-slate-300">
+                    <ul className="space-y-1.5 text-charcoal-300">
                       {role.responsibilities.map((r, i) => (
                         <li key={i} className="flex items-start space-x-2">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 flex-shrink-0 mt-1" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-gold-500 flex-shrink-0 mt-1" />
                           <span>{r}</span>
                         </li>
                       ))}
@@ -215,13 +215,13 @@ export const CareerPage: React.FC = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-mono text-xs uppercase font-bold text-slate-400 tracking-wider mb-2">
+                    <h4 className="font-mono text-xs uppercase font-bold text-charcoal-400 tracking-wider mb-2">
                       Candidate Qualifications
                     </h4>
-                    <ul className="space-y-1.5 text-slate-300">
+                    <ul className="space-y-1.5 text-charcoal-300">
                       {role.requirements.map((req, i) => (
                         <li key={i} className="flex items-start space-x-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-gold-400 mt-1.5 flex-shrink-0" />
                           <span>{req}</span>
                         </li>
                       ))}
@@ -229,15 +229,15 @@ export const CareerPage: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4">
-                  <div className="flex items-center space-x-2 text-xs text-slate-400 font-mono">
-                    <Mail className="w-4 h-4 text-blue-400" />
-                    <span>Send Application to: <strong className="text-white">info@neropat.com</strong></span>
+                <div className="pt-6 mt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+                  <div className="flex items-center space-x-2 text-xs text-charcoal-400 font-mono">
+                    <Mail className="w-4 h-4 text-gold-400" />
+                    <span>Send Application to: <strong className="text-white">{COMPANY_INFO.email}</strong></span>
                   </div>
 
                   <a
                     href={`mailto:${COMPANY_INFO.email}?subject=Application for ${encodeURIComponent(role.title)}`}
-                    className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold uppercase tracking-wider transition-colors flex items-center space-x-2"
+                    className="px-5 py-2.5 rounded-xl bg-gold-500 hover:bg-gold-600 text-charcoal-950 text-xs font-bold uppercase tracking-wider transition-colors flex items-center space-x-2 shadow-lg shadow-gold-500/20"
                   >
                     <span>Apply via Email</span>
                     <ArrowRight className="w-3.5 h-3.5" />

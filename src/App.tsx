@@ -37,7 +37,7 @@ const AppContent: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-charcoal-950 text-charcoal-100 selection:bg-gold-500 selection:text-charcoal-950">
       {/* Top sticky navigation bar */}
       <Navbar />
 

@@ -39,7 +39,7 @@ export const ContactPage: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
-    <div className="w-full bg-slate-950 text-slate-100">
+    <div className="w-full bg-charcoal-950 text-charcoal-100">
       <SeoMeta
         title="Contact Us | xyz IP Services | Bengaluru Office"
         description="Contact xyz IP Services in Bengaluru, Karnataka, India. Connect with patent analysts for drafting, filing, searches, and portfolio intelligence. Call 12345678790."
@@ -48,20 +48,20 @@ export const ContactPage: React.FC = () => {
       />
 
       {/* Hero */}
-      <section className="relative pt-12 pb-16 bg-gradient-to-b from-slate-900/80 via-slate-950 to-slate-950 border-b border-slate-800/80">
+      <section className="relative pt-12 pb-16 bg-charcoal-900 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           <Breadcrumbs items={[{ label: 'Contact' }]} />
 
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-950/70 border border-blue-800/50 text-blue-400 text-xs font-mono uppercase mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-mono uppercase mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-gold-500" />
             <span>GLOBAL PATENT SUPPORT HQ</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-heading max-w-4xl leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-serif font-extrabold text-white tracking-tight max-w-4xl leading-tight">
             Contact xyz IP Services
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-300 max-w-3xl mt-4 leading-relaxed font-normal">
+          <p className="text-base sm:text-lg text-charcoal-300 max-w-3xl mt-4 leading-relaxed font-normal">
             Discuss your patent drafting, prior-art search, FTO clearance, or IP portfolio intelligence requirements with our senior technical analysts.
           </p>
         </div>
@@ -72,45 +72,45 @@ export const ContactPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Coordinates & Corporate Information */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/70 border border-slate-800 space-y-6">
-              <h2 className="text-xl font-bold text-white font-heading">
+            <div className="p-6 sm:p-8 rounded-3xl bg-charcoal-900 border border-white/10 space-y-6">
+              <h2 className="text-xl font-serif font-bold text-white">
                 Corporate Office
               </h2>
 
-              <div className="space-y-4 text-xs sm:text-sm text-slate-300">
+              <div className="space-y-4 text-xs sm:text-sm text-charcoal-300">
                 <div className="flex items-start space-x-3.5">
-                  <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-gold-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-white block mb-0.5">Office Address:</span>
-                    <span className="leading-relaxed text-slate-300">{COMPANY_INFO.address}</span>
+                    <span className="leading-relaxed text-charcoal-300">{COMPANY_INFO.address}</span>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3.5 pt-3 border-t border-slate-800">
-                  <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <div className="flex items-center space-x-3.5 pt-3 border-t border-white/10">
+                  <Phone className="w-5 h-5 text-gold-400 flex-shrink-0" />
                   <div>
                     <span className="font-semibold text-white block">Direct Line:</span>
-                    <a href={`tel:${COMPANY_INFO.phone}`} className="text-slate-200 hover:text-blue-400 font-mono">
+                    <a href={`tel:${COMPANY_INFO.phone}`} className="text-charcoal-200 hover:text-gold-400 font-mono">
                       {COMPANY_INFO.phone}
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3.5 pt-3 border-t border-slate-800">
-                  <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <div className="flex items-center space-x-3.5 pt-3 border-t border-white/10">
+                  <Mail className="w-5 h-5 text-gold-400 flex-shrink-0" />
                   <div>
                     <span className="font-semibold text-white block">Electronic Mail:</span>
-                    <a href={`mailto:${COMPANY_INFO.email}`} className="text-slate-200 hover:text-blue-400 font-mono">
+                    <a href={`mailto:${COMPANY_INFO.email}`} className="text-charcoal-200 hover:text-gold-400 font-mono">
                       {COMPANY_INFO.email}
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3.5 pt-3 border-t border-slate-800">
-                  <Clock className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                <div className="flex items-center space-x-3.5 pt-3 border-t border-white/10">
+                  <Clock className="w-5 h-5 text-gold-400 flex-shrink-0" />
                   <div>
                     <span className="font-semibold text-white block">Consulting Hours:</span>
-                    <span className="text-slate-300">Monday to Friday: 9:30 AM – 6:30 PM IST</span>
+                    <span className="text-charcoal-300">Monday to Friday: 9:30 AM – 6:30 PM IST</span>
                   </div>
                 </div>
               </div>
@@ -120,18 +120,18 @@ export const ContactPage: React.FC = () => {
                   href={COMPANY_INFO.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-2 shadow-lg shadow-emerald-600/30"
+                  className="w-full py-3.5 px-4 rounded-xl bg-gold-500 hover:bg-gold-600 text-charcoal-950 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-2 shadow-lg shadow-gold-500/20"
                 >
-                  <MessageCircle className="w-4 h-4 fill-white" />
+                  <MessageCircle className="w-4 h-4 fill-charcoal-950" />
                   <span>Let's Chat on WhatsApp</span>
                 </a>
               </div>
             </div>
 
             {/* Confidentiality card */}
-            <div className="p-6 rounded-2xl bg-slate-950 border border-slate-800 text-xs text-slate-400 space-y-2.5">
-              <div className="flex items-center space-x-2 text-emerald-400 font-bold">
-                <ShieldCheck className="w-5 h-5" />
+            <div className="p-6 rounded-2xl bg-charcoal-900/60 border border-white/10 text-xs text-charcoal-400 space-y-2.5">
+              <div className="flex items-center space-x-2 text-gold-400 font-bold">
+                <ShieldCheck className="w-5 h-5 text-gold-400" />
                 <span>NDA & Client Protection</span>
               </div>
               <p className="leading-relaxed">
@@ -142,15 +142,15 @@ export const ContactPage: React.FC = () => {
 
           {/* Right Column: Interactive Consultation Form */}
           <div className="lg:col-span-7">
-            <div className="p-6 sm:p-10 rounded-3xl bg-slate-900/70 border border-slate-800 shadow-2xl">
+            <div className="p-6 sm:p-10 rounded-3xl bg-charcoal-900 border border-white/10 shadow-2xl">
               <div className="mb-6">
-                <span className="font-mono text-xs font-bold text-blue-400 uppercase tracking-wider block mb-1">
+                <span className="font-mono text-xs font-bold text-gold-400 uppercase tracking-wider block mb-1">
                   SECURE INQUIRY SUBMISSION
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-bold text-white font-heading">
+                <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white">
                   Let's Discuss Your IP Requirements
                 </h2>
-                <p className="text-xs sm:text-sm text-slate-400 mt-2">
+                <p className="text-xs sm:text-sm text-charcoal-400 mt-2">
                   Complete the form below to receive a scoping analysis and estimated project roadmap.
                 </p>
               </div>
@@ -162,13 +162,13 @@ export const ContactPage: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-900/40 border-t border-slate-800 text-left">
+      <section className="py-16 bg-charcoal-900/40 border-t border-white/10 text-left">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="font-mono text-xs text-blue-400 uppercase font-bold tracking-wider block mb-1">
+            <span className="font-mono text-xs text-gold-400 uppercase font-bold tracking-wider block mb-1">
               FREQUENT INQUIRIES
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white font-heading">
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white">
               Frequently Asked Questions
             </h2>
           </div>
@@ -180,22 +180,22 @@ export const ContactPage: React.FC = () => {
               return (
                 <div
                   key={i}
-                  className="rounded-2xl bg-slate-950 border border-slate-800 overflow-hidden transition-colors"
+                  className="rounded-2xl bg-charcoal-900 border border-white/10 overflow-hidden transition-colors"
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : i)}
-                    className="w-full p-5 text-left flex items-center justify-between text-sm sm:text-base font-bold text-white hover:text-blue-300 transition-colors"
+                    className="w-full p-5 text-left flex items-center justify-between text-sm sm:text-base font-serif font-bold text-white hover:text-gold-400 transition-colors"
                   >
                     <span>{faq.q}</span>
                     <ChevronDown
-                      className={`w-4 h-4 text-slate-400 transition-transform duration-200 flex-shrink-0 ml-4 ${
-                        isOpen ? 'rotate-180 text-blue-400' : ''
+                      className={`w-4 h-4 text-charcoal-400 transition-transform duration-200 flex-shrink-0 ml-4 ${
+                        isOpen ? 'rotate-180 text-gold-400' : ''
                       }`}
                     />
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-900 pt-3">
+                    <div className="px-5 pb-5 text-xs sm:text-sm text-charcoal-300 leading-relaxed border-t border-white/5 pt-3">
                       {faq.a}
                     </div>
                   )}
