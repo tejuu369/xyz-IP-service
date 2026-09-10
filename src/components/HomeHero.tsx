@@ -44,22 +44,21 @@ export const HomeHero: React.FC = () => {
               </span>
             </div>
 
-            {/* Classic Display Headline with High-Craft Serif Pairing */}
-            <div className="space-y-3">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[54px] font-extrabold text-white tracking-tight leading-[1.14] font-serif">
-                End-to-End Patent & IP Support for{' '}
-                <span className="text-gold-400">
-                  Global Innovators
+            {/* Classic Display Headline with Cursive Styling */}
+            <div className="space-y-3.5">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[72px] text-white leading-[1.2] font-cursive tracking-wide">
+                Patent Support for{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-amber-400 to-gold-500 drop-shadow-[0_2px_16px_rgba(212,175,55,0.3)]">
+                  Every IP Stakeholder
                 </span>
-                , Startups, Law Firms, and Foreign Associates
               </h1>
-              <p className="text-sm sm:text-base font-serif italic text-gold-200/90 font-normal">
+              <p className="text-base sm:text-lg font-serif italic text-gold-300/90 font-normal tracking-wide">
                 Where technical invention meets enforceable legal precision.
               </p>
             </div>
 
             {/* Supporting Classic Overview */}
-            <p className="text-base sm:text-lg text-charcoal-300 leading-relaxed max-w-2xl font-normal font-sans">
+            <p className="text-[17px] sm:text-[19px] text-charcoal-200/90 leading-[1.75] max-w-2xl font-normal font-sans tracking-[-0.01em]">
               <strong className="text-white font-semibold">xyz IP</strong> provides structured, high-caliber intellectual property counsel across the full innovation lifecycle — from exhaustive novelty searches and claim engineering to global patent prosecution, freedom-to-operate clearances, and commercial portfolio monetization.
             </p>
 
